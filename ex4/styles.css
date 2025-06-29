@@ -1,0 +1,13 @@
+table,
+th,
+tr,
+td {
+  border: 1px solid;
+}
+table {
+  border-collapse: collapse;
+}
+
+tr > td:first-child {
+  font-weight: bold;
+}

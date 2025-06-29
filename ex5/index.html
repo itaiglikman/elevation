@@ -1,0 +1,77 @@
+<!-- Exercise 5
+Create a comprehensive contact form using various input types.
+
+Requirements
+Create a contact form with multiple input types
+Include proper labels for all form elements
+Use fieldsets to group related form elements
+Include various input types (text, email, tel, textarea, select, radio, checkbox)
+Add a submit and reset button
+Include placeholder text and required attributes -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="" method="GET">
+      <div>
+        <h3>Personal Info</h3> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required /><br>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+        /> <br>
+        <label for="phone">Phone:</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="(+972) 123-4567"
+          required
+        />
+      </div>
+      <hr>
+      <div>
+        <h3>Message Details</h3> <br>
+        <div>
+        <label for="subject">Subject:</label>
+        <select name="subject_select" id="subject" required>
+            <option value="" disabled selected>Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+        </select>     
+        </div>
+        <div>
+            <p>Priority:</p>
+            <input type="radio" id="low" name="priority" value="low">
+            <label for="low">low</label>
+            <input type="radio" id="medium" name="priority" value="medium">
+            <label for="medium">medium</label>
+            <input type="radio" id="high" name="priority" value="high">
+            <label for="high">high</label>
+        </div>
+        <div>
+            <p>Message:</p>
+            <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
