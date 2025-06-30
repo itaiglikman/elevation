@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(243, 227, 207);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 94, 0);
+}
+
+h2 {
+  color: rgb(92, 92, 238);
+  background-color: rgb(92, 92, 238, 0.3);
+  border-left: 5px solid;
+  padding: 5px;
+}
+
+#secondary-headline {
+  font-style: italic;
+}
+
+ol {
+  background-color: rgb(92, 92, 238, 0.1);
+  padding: 20px;
+}
+
+ol > li {
+  font-weight: bold;
+}
+
+ol > li > span {
+  color: red;
+}
+
+ul{
+    margin: 20px 0 20px -30px;
+}

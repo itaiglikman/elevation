@@ -1,0 +1,27 @@
+#container{
+    display: inline-block;
+    background-color: rgb(197, 192, 192);
+    box-shadow: 3px 3px 3px ;
+    
+}
+
+span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+}
+
+#first{
+    background-color: aquamarine;
+}
+
+#second{
+    background-color: rgb(235, 102, 53);
+}
+
+.button{
+    background-color: rgb(7, 192, 7);
+    border: green 1px solid;
+}
+

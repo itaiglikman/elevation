@@ -1,0 +1,15 @@
+#a{
+    font-size: xx-large;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+#b{
+    font-size: large;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#c{
+    font-size: small;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

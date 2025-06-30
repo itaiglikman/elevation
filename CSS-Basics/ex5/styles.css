@@ -1,0 +1,34 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse ;
+}
+
+thead{
+    background-color: rgb(218, 213, 213);
+}
+
+th{
+    padding: 10px;
+}
+
+tbody{
+    background-color: rgb(201, 241, 201);
+    font-weight: lighter;
+}
+
+tr{
+    border: 1px solid;
+    text-align: center;
+}
+
+.team{
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+

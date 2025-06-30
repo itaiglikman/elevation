@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: center center url('https://media.gettyimages.com/id/968350196/photo/fortune-cookies-with-cartoon-eyes.jpg?s=612x612&w=gi&k=20&c=SDcT4931xlEPnTOlYtUTk1FPtKKH0VbR1w4QIhC9D0s=');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    margin-left: 5px;
+    width: 30%;
+    background-color: blueviolet;
+}
+
+#first{
+    opacity: 0.5;
+}

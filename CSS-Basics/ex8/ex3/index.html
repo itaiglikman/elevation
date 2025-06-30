@@ -1,0 +1,76 @@
+<!-- Exercise 3
+Create a basic portfolio page with links and images.
+
+Requirements
+Create a portfolio page with sections for projects
+Include at least 3 external links (use target="_blank")
+Add at least 2 images with alt text
+Include an email link (mailto:)
+Add a "Back to Top" internal link -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Itai Glikman - Portfolio</h1>
+    <div>
+      <div>
+        <h2>My Projects</h2> 
+        <hr class="hr-red-border">
+        <div>
+          <h3>project 1: ToDo list</h3>
+          <img src="../ex3/images/Screenshot 2023-06-10 145727.png" alt="" />
+          <p>
+            <span class="bold yellow">Description:</span> The best app for managing your tasks!
+          </p>
+          <a
+            href="https://github.com/itaiglikman/Todo-List-JS-HTML5"
+            target="_blank" class="bold green"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>project 2: Around the Globe</h3>
+          <img src="../ex3/images/Screenshot 2023-10-05 202238.png" alt="" />
+          <p>
+            <span class="bold yellow">Description:</span> Where else can you get a chance to
+            have a vacation like that in the world?!
+          </p>
+          <a
+            href="https://github.com/itaiglikman/Globe-Tracker-Fullstack-React"
+            target="_blank" class="bold green"
+          >
+            GitHub
+          </a>
+          <hr class="hr-fade-border">
+        </div>
+      </div>
+
+      <div>
+        <h2>Contact Info</h2>
+        <hr class="hr-red-border">
+        <ul>
+          <li>
+            <span class="bold yellow">Email:</span>
+            <a href="mailto:itaig1998@gmail.com" target="_blank" class="bold green"
+              >itaig1998@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/itaiglikman" target="_blank" class="bold yellow">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/itai-glikman/" target="_blank" class="bold yellow">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
