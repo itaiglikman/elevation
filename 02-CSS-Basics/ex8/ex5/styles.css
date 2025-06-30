@@ -1,0 +1,78 @@
+:root {
+  --blue: #2980b9;
+  --background: #f5f7fa;
+  --form-background: #ffffff;
+  --form-area-background: #ecf0f1;
+  --form-text: #34495e;
+  --form-input-text: #bdc3c7;
+  --green-btn: #25af60;
+  --red-btn: #e74b3c;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background);
+  color: var(--blue);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 80%;
+  background-color: var(--form-background);
+  padding: 5% 3%;
+  border: solid 0px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-area {
+  background-color: var(--form-area-background);
+  border: 3px solid var(--blue);
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h3 {
+  margin: 0;
+  position: absolute;
+  top: -15px;
+  background-color: white;
+  padding: 0 3px;
+}
+
+label,
+p {
+  color: var(--form-text);
+  font-weight: bold;
+}
+
+input,textarea,select{
+    padding: 5px;
+    border: 2px solid var(--form-input-text);
+    border-radius: 5px;
+    color: var(--form-input-text);
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-right: 3px;
+}
+
+.submit {
+  background-color: var(--green-btn);
+}
+
+.reset {
+  background-color: var(--red-btn);
+}
