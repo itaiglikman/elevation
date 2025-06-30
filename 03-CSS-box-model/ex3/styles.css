@@ -1,0 +1,55 @@
+#main {
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-color: #6C5CE7;
+  position: relative;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.word{
+    font-weight: bold;
+    position: absolute;
+}
+
+#money{
+    top: 5px;
+    left: 5px;
+}
+
+#time{
+    bottom: 5px;
+    right: 5px;
+}
+
+.horizontal{
+    position: absolute;
+    width: 20px;
+    background-color: grey;
+    bottom: 5px;
+}
+
+#a{
+    height: 10%;
+}
+#b{
+    left: 45px;
+    height: 50%;
+}
+#c{
+    left: 85px;
+    height: 80%;
+}
+#d{
+    left: 125px;
+    height: 70%;
+}
+#e{
+    left: 165px;
+    height: 60%;
+}
+#f{
+    left: 205px;
+    height: 30%;
+}
