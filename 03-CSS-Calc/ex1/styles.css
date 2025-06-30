@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+#first {
+  position: absolute;
+  left: 110px;
+  left: calc(100% - 20px);;
+  height: 30px;
+  width: 20px;
+  background-color: aqua;
+}
+
+#second {
+  height: 30px;
+  background-color: blueviolet;
+}
