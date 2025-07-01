@@ -1,0 +1,76 @@
+:root{
+    --pink:#F08080;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    border: 5px solid var(--pink);
+}
+
+.up-container{
+    height: 80%;
+    width: 100%;
+    border-bottom: 5px solid var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    /* margin: 20% 0; */
+}
+    
+.circle{
+    /* flex: 1; */
+    border: 5px solid var(--pink);
+    width: 20%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--pink);
+}
+
+.content{
+    margin: 0 10%;
+    text-align: center;
+}
+
+.down-container{
+    /* background-color: black; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    justify-content: flex-start;
+    padding: 0 5%;
+    gap: 5px;
+}
+
+.item{
+    width: 70px;
+    height: 20px;
+    background-color: var(--pink);
+}
+
+
+/* option 1: */
+/* .item:first-child{
+    margin-right: auto;
+} */
+ 
+/* option 2: */
+.item:nth-child(2){
+    flex-grow: 1;
+background-color: white;
+}
+

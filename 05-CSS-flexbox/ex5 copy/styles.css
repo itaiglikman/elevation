@@ -1,0 +1,51 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main-container {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between content and flex container */
+}
+
+/* Main Content */
+.main-content {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Flex Container */
+.flex-container {
+    display: flex;
+    gap: 10px; /* Space between large and small boxes */
+    height: 50%; /* Adjust height as needed */
+}
+
+/* Large Box */
+.box.large {
+    flex: 2; /* Takes up twice the space */
+    background-color: #6495EC;
+}
+
+/* Small Box Container */
+.box.small-container {
+    flex: 3; /* Takes up three times the space */
+    display: flex;
+    flex-wrap: wrap; /* Wraps items into rows */
+    gap: 10px; /* Space between small boxes */
+}
+
+/* Small Boxes */
+.small-box {
+    flex: 1 1 50%; /* Each box takes up 50% of the container width */
+    background-color: #6495EC;
+    height: 50%; /* Ensures each box is a square */
+}

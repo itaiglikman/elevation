@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px 30px;
+    height: 100%;
+}
+
+div.main-content {
+    margin-bottom: 40px;
+}
+
+.b-flex-container {
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+    gap: 3px;
+}
+
+.b-box {
+    flex: 1px;
+}
+
+.m-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 3px;
+    
+}
+
+.s-flex-container {
+    display: flex;
+    height: 100%;
+    gap: 3px;
+}
+
+.s-box {
+    flex: 1;
+}
+
+div.content {
+    background-color: #6495EC;
+    height: 100%;
+}
