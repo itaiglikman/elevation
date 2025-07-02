@@ -1,0 +1,11 @@
+img{
+    width: 100%;
+}
+
+.relative-width{
+    width: 50%;
+    
+}
+.fixed-width{
+    width: 2000px;
+}

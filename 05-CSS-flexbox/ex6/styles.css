@@ -1,5 +1,5 @@
-:root{
-    --pink:#F08080;
+:root {
+    --pink: #F08080;
 }
 
 * {
@@ -10,67 +10,66 @@
 
 html,
 body {
+    /* make height responsive */
     height: 100%;
 }
 
-main{
+main {
+    /* make height responsive */
     height: 100%;
     width: 100%;
-    border: 5px solid var(--pink);
+    display: flex;
+    flex-direction: column;
 }
 
-.up-container{
-    height: 80%;
-    width: 100%;
-    border-bottom: 5px solid var(--pink);
+.up-container {
+    flex: 1;
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2%;
-    /* margin: 20% 0; */
+    border: 5px solid var(--pink);
 }
-    
-.circle{
-    /* flex: 1; */
+
+.circle {
     border: 5px solid var(--pink);
     width: 20%;
+    margin-bottom: 3%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: var(--pink);
 }
 
-.content{
+.content {
     margin: 0 10%;
     text-align: center;
 }
 
-.down-container{
-    /* background-color: black; */
-    height: 20%;
+.down-container {
+    
+    border: 5px solid var(--pink);
+    border-top: none;
+    padding: 10px 5%;
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */
     justify-content: flex-start;
-    padding: 0 5%;
     gap: 5px;
 }
 
-.item{
+.item {
     width: 70px;
     height: 20px;
     background-color: var(--pink);
 }
 
-
 /* option 1: */
 /* .item:first-child{
     margin-right: auto;
 } */
- 
-/* option 2: */
-.item:nth-child(2){
-    flex-grow: 1;
-background-color: white;
-}
 
+/* option 2: */
+.item:nth-child(2) {
+    flex-grow: 1;
+    background-color: white;
+}
