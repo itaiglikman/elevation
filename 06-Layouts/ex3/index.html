@@ -1,0 +1,98 @@
+<!-- Exercise 2
+Create a horizontal dropdown navigation bar using flexbox.
+
+Make most of the menu items aligned to the right and at least one item aligned to the left
+When hovering some of the menu items a dropdown menu will open
+The dropdown menu hides some of the main content (as it renders on top of it)
+Hovering on all menu items has an effect -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Contact Form</h1>
+        <div>Get in touch with us</div>
+
+        <form action="#">
+
+            <section class="double-field-section">
+                <div class="field-flex-container">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname">
+                </div>
+                <div class="field-flex-container">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname">
+                </div>
+            </section>
+
+            <section>
+                <div class="field-flex-container">
+                    <label for="email">Email Address</label>
+                    <input type="email">
+                    <div class="field-flex-container">
+                    </div>
+            </section>
+
+            <section class="double-field-section">
+                <div class="field-flex-container">
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option value="" disabled selected>Select a topic</option>
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="athletics">Athletics</option>
+                    </select>
+                </div>
+
+                <div class="field-flex-container">
+                    <label for="priority">Priority</label>
+                    <select name="priority" id="priority">
+                        <option value="low">low</option>
+                        <option value="medium">medium</option>
+                        <option value="high">high</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <div class="field-flex-container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Tell us how we can help..."></textarea>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact-headline">Contact Preferences</div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="email" id="email">
+                    <label for="email">Email Updates</label>
+                    <input type="checkbox" name="phone" id="phone">
+                    <label for="phone">Phone Updates</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Newsletter</label>
+                </div>
+            </section>
+
+            <section class="btn-section">
+                <button type="button" class="draft">Save Draft</button>
+                <button type="submit" class="send">Send Message</button>
+            </section>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
