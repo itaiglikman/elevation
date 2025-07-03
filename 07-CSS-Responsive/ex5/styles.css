@@ -1,0 +1,154 @@
+:root {
+  --grey-bg: #f8f9fa;
+  --footer-bg: #343a40;
+  --footer-text-color: #e5e7eb;
+  --sidebars-text-color: #6c757d;
+  --border-color: #eaecef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #6879e2;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  padding: 10px;
+}
+
+.image-container {
+  flex: 1;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to right, #5a57c4, #8a56d8);
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+}
+
+.circle-image {
+  margin: auto;
+  background-color: #8a84d2;
+  width: 20%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+}
+
+img {
+  margin: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 50%;
+}
+
+.content-container {
+  flex: 1;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-container > * {
+  margin: 10px;
+}
+
+.content-container > h2{
+    flex: 1;
+}
+
+.content-container > p {
+    flex: 2;
+  font-size: small;
+}
+
+.bottom-content-container{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom-content-container>*{
+    width: 100%;
+}
+
+.content-container > .bottom-content-container> div {
+  font-size: x-large;
+  color: red;
+  font-weight: bolder;
+}
+
+.content-container > .bottom-content-container> button {
+  color: white;
+  font-weight: bolder;
+  background: linear-gradient(to right, #5a57c4, #8a56d8);
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.only-mid-screen {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 10px 100px;
+  }
+
+  .content-container {
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+.bottom-content-container{
+    align-items: center;
+}
+
+  .bottom-content-container>*{
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: row;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    height: 100vh;
+    margin: auto;
+  }
+
+  .image-container {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .content-container {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .wrapper > .content-container {
+    justify-content: center;
+  }
+}
