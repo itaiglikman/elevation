@@ -55,6 +55,12 @@ body {
     color: #bdc3c7;
     text-decoration: none;
     transition: all 0.3s;
+     /* 2. 
+    nav items are not full width.
+    add */
+  display: inline-block;
+  width: 100%;
+  /*  */
 }
 
 .nav-item .active .nav-link {
