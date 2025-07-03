@@ -497,5 +497,10 @@ fix width of buttons */
   */
   width: 100%;
   /*  */
+  /* 22.
+  fix position to the left side
+  */
+  left: 0;
+  /*  */
   bottom: 0;
 }
