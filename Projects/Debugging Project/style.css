@@ -197,6 +197,14 @@ align-items:center
   gap: 2rem;
 }
 
+/* 12.
+make left column take the remaining space */
+/*  */
+.dashboard-grid>.left-column {
+    flex: 1;
+}
+/*  */
+
 .widget {
   background: white;
   border-radius: 8px;
