@@ -438,6 +438,10 @@ fix width of buttons */
   background-color: #f8f9fa;
   border-radius: 0 6px 6px 0;
   margin-bottom: 1rem;
+  /* 18.
+  add border to the left side of the item: */
+  border-left: #3498db solid;
+  /*  */
 }
 
 .notification-item h5 {
