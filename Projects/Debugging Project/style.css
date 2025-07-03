@@ -310,6 +310,11 @@ create gap between buttons */
 }
 
 .action-btn {
+  /* 15.
+fix width of buttons */
+  /*  */
+  width: 130px;
+  /*  */
   background-color: #3498db;
   color: white;
   border: none;
