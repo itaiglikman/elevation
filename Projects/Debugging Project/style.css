@@ -63,7 +63,14 @@ body {
   /*  */
 }
 
-.nav-item .active .nav-link {
+/* 3. 
+active item is not blue.
+fix: 
+delete the space between nav-item and active
+*/
+/* .nav-item .active .nav-link { */
+.nav-item.active .nav-link {
+/*  */
     background-color: #3498db;
     color: white;
 }
