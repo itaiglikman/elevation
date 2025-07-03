@@ -160,6 +160,11 @@ display:flex*/
   display: flex;
   /*  */
   gap: 1.5rem;
+  /* 11.
+  make space between stats-grid to dashboard-grid */
+  /*  */
+  margin-bottom: 2rem;
+  /*  */
 }
 
 .stat-card {
