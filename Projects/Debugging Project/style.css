@@ -313,7 +313,7 @@ make left column take the remaining space */
 .quick-actions {
   display: flex;
   /* 14.
-create gap between buttons */
+    create gap between buttons */
   /*  */
   gap: 20px;
   /*  */
@@ -321,7 +321,7 @@ create gap between buttons */
 
 .action-btn {
   /* 15.
-fix width of buttons */
+    fix width of buttons */
   /*  */
   width: 130px;
   /*  */
@@ -332,6 +332,14 @@ fix width of buttons */
   border-radius: 6px;
   font-size: 0.9rem;
   flex: 1;
+}
+
+/* 25:
+on hover make background color darker
+*/
+.action-btn:hover {
+    background-color: #0e4d77;
+    cursor: pointer;
 }
 
 .activity-list {
