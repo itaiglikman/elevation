@@ -177,6 +177,11 @@ align-items:center
 }
 
 .stat-number {
+  /* 10.
+    change font size */
+  /*  */
+  font-size: xx-large;
+  /*  */
   font-weight: bold;
   color: #3498db;
   margin-bottom: 0.5rem;
