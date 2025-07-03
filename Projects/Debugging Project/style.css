@@ -403,6 +403,11 @@ fix width of buttons */
   border-radius: 50%;
   background-color: #3498db;
   display: flex;
+  /* 17.
+  align text with flex abilities: */
+  justify-content: center;
+  align-items: center;
+  /*  */
   color: white;
   font-weight: bold;
   font-size: 0.9rem;
