@@ -129,7 +129,7 @@ align-items:center*/
   justify-content: center;
   color: white;
   font-weight: bold;
-   /* 6.
+  /* 6.
   background not round
   fix:
   border-radius: 50%; */
@@ -142,11 +142,18 @@ align-items:center*/
 user name is not bold
 fix:
 font-weight */
-.user-info>span{
-    font-weight: bold;
+.user-info > span {
+  font-weight: bold;
 }
 
 .stats-grid {
+  /* 8. 
+stats cards are not in a row
+fix:
+display:flex*/
+  /*  */
+  display: flex;
+  /*  */
   gap: 1.5rem;
 }
 
