@@ -108,6 +108,15 @@ delete the space between nav-item and active
 }
 
 .user-info {
+  /* 5.
+user-info items are not aligned 
+fix:
+display:flex
+align-items:center*/
+  /*  */
+  display: flex;
+  align-items: center;
+  /*  */
   gap: 1rem;
 }
 
