@@ -89,6 +89,11 @@ delete the space between nav-item and active
   /*  */
   flex: 1;
   /*  */
+  /* 20.
+  make footer sticky by position absolute - parent (main) is the relative
+  */
+  position: relative;
+  /*  */
 }
 
 .header-bar {
@@ -482,5 +487,10 @@ fix width of buttons */
   text-align: center;
   color: #7f8c8d;
   font-size: 0.9rem;
+  /* 20.
+  make footer sticky by position absolute - parent (main) is the relative
+  */
+  position: absolute;
+  /*  */
   bottom: 0;
 }
