@@ -492,5 +492,10 @@ fix width of buttons */
   */
   position: absolute;
   /*  */
+  /* 21.
+  fix width to cover the whole line
+  */
+  width: 100%;
+  /*  */
   bottom: 0;
 }
