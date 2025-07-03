@@ -467,7 +467,11 @@ fix width of buttons */
 }
 
 .search-box {
-  width: 120px;
+  /* 23.
+    make search-box wider */
+  /* width: 120px; */
+  width: 200px;
+  /*  */
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0.5rem;
