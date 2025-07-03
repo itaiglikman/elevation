@@ -129,6 +129,13 @@ align-items:center*/
   justify-content: center;
   color: white;
   font-weight: bold;
+   /* 6.
+  background not round
+  fix:
+  border-radius: 50%; */
+  /*  */
+  border-radius: 50%;
+  /*  */
 }
 
 .stats-grid {
