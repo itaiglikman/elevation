@@ -200,8 +200,8 @@ align-items:center
 /* 12.
 make left column take the remaining space */
 /*  */
-.dashboard-grid>.left-column {
-    flex: 1;
+.dashboard-grid > .left-column {
+  flex: 1;
 }
 /*  */
 
@@ -213,7 +213,11 @@ make left column take the remaining space */
 }
 
 .widget-header {
-  padding: 2.5rem;
+  /* 13.
+    fix widget-header margin */
+  /* padding: 2.5rem; */
+  padding: 1rem;
+  /*  */
   border-bottom: 1px solid #e9ecef;
   margin-bottom: 1rem;
 }
