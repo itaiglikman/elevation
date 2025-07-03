@@ -225,7 +225,7 @@ make left column take the remaining space */
 .widget-title {
   font-size: 1.2rem;
   color: #2c3e50;
-    /* 13. */
+  /* 13. */
   /* margin: 0 0 1rem 0; */
   /*  */
 }
@@ -302,6 +302,11 @@ make left column take the remaining space */
 
 .quick-actions {
   display: flex;
+  /* 14.
+create gap between buttons */
+  /*  */
+  gap: 20px;
+  /*  */
 }
 
 .action-btn {
