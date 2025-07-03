@@ -364,6 +364,12 @@ fix width of buttons */
 }
 
 .progress-bar {
+  /* 19.
+  progress bar isn't visible
+  fix: 
+  set height*/
+  height: 5px;
+  /*  */
   width: 100%;
   background-color: #e9ecef;
   border-radius: 4px;
