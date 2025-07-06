@@ -1,0 +1,10 @@
+.circle {
+  width: 10vw;
+  height: 10vw;
+  background-color: blue;
+  border-radius: 50%;
+  opacity: 0.8; /* 0 = fully transparent, 1 = fully opaque */
+  margin: 15%;
+  display: flex;
+  justify-content: center;
+}
