@@ -73,13 +73,35 @@ const obj = {};
 //   obj[currentWord] = obj[currentWord] ? ++obj[currentWord] : 1;
 // }
 
-
 function countWords(words) {
-    return words.reduce((wordCount, word) => {
-      wordCount[word] = wordCount[word] ? ++wordCount[word] : 1;
-      return wordCount;
-    },{});
-    
+  return words.reduce((wordCount, word) => {
+    wordCount[word] = wordCount[word] ? ++wordCount[word] : 1;
+    return wordCount;
+  }, {});
 }
 
-console.log(countWords(words));
+// console.log(countWords(words));
+
+let users = [];
+
+const getData = function (callback) {
+  setTimeout(function () {
+    users = [{ name: "Rick" }, { name: "Morty" }];
+    console.log("Got users");
+    callback();
+  }, 3000);
+};
+
+const displayData = function () {
+  console.log("Going to display: " + users);
+  for (user of users) {
+    console.log(user.name);
+  }
+};
+
+// getData(displayData)
+
+const getFormalTitle = (str1, str2) => str1 + " " + str2;
+
+const formalTitle = getFormalTitle("Madamme", "Lellouche");
+// console.log(formalTitle); //returns "Maddame Lellouche"
