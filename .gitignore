@@ -1,0 +1,39 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Misc
+*.local
+*.cache
+
+# Mac system files
+Icon?
+
+# Windows system files
+Desktop.ini
+$RECYCLE.BIN/
+
+# Others
+coverage/
+
