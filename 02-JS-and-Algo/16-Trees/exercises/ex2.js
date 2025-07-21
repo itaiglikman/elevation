@@ -79,25 +79,25 @@ Test your findCommonParent method for a BS tree made made from the following
     // }
 
     findCommonParent(letter1, letter2) {
-    let current = this;
-    let parent = null;
-    while (current) {
-        if (letter1 < current.value && letter2 < current.value) {
-            parent = current;
-            current = current.leftChild;
-        } else if (letter1 > current.value && letter2 > current.value) {
-            parent = current;
-            current = current.rightChild;
-        } else {
-            // If current.value is one of the letters, return parent
-            if (current.value === letter1 || current.value === letter2) {
-                return parent ? parent.value : null;
+        let current = this;
+        let parent = null;
+        while (current) {
+            if (letter1 < current.value && letter2 < current.value) {
+                parent = current;
+                current = current.leftChild;
+            } else if (letter1 > current.value && letter2 > current.value) {
+                parent = current;
+                current = current.rightChild;
+            } else {
+                // If current.value is one of the letters, return parent
+                if (current.value === letter1 || current.value === letter2) {
+                    return parent ? parent.value : null;
+                }
+                return current.value;
             }
-            return current.value;
         }
+        return null;
     }
-    return null;
-}
 
 }
 
