@@ -1,4 +1,8 @@
 
+// ex1:
+// Add events to each of the arrow divs
+// Each event should call some function that moves the ball according to the arrow direction
+
 const ball = document.getElementById("ball");
 let ballPositionLeftRight = ball.style.left || 0;
 let ballPositionUpDown = ball.style.top || 0;
