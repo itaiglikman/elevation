@@ -1,16 +1,54 @@
 #container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(36, 36, 116);
-    display: inline-block; 
+form {
+  padding: 5% 15%;
+  height: 400px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#centerArea {
+  width: 100%;
+  display: flex;
+  align-items: space-between;
+}
+
+#centerArea > * {
+  flex: 1;
+}
+
+#bottomArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottomArea > #Msg {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
 }

@@ -1,14 +1,19 @@
 <!-- https://elevationacademy.github.io/fullstack-selfpaced/?authuser=0#/js-and-web/dom-intro/Exercises -->
-<!-- Exercise 3 - Visual Overload
-- Create the following (hover over the boxes), using the guidelines below:
+<!-- Exercise 4 - Form
+Your job is to create your own form, with the following conditions:
 
-The rule is simple: when you hover your mouse over any box, that box should change to a random color.
+Name must be longer than 2 characters
+Salary must be greater than 10,000 but less than 16,000
+Birthday may not be null
+Phone must be 10 digits long
+If you follow these steps, you will be able to create this form entirely on your own with what we've learned in this lesson:
 
-You should only have one div inside your index.html body - a div with an ID of container, which will hold all the boxes
-Generate and add the other boxes to container using JS (you should be using a for loop)
-In the loop, you should first create a box, then give it its attributes
-To make each box respond to its own onmouseenter event, you can use the same box you created in the beginning in order to change its background color (alternatively, you can use JS this)
-Except for the background colors, the CSS should be in a separate file -->
+Create the HTML - it can be as simple as a few input fields and a button - do not stress over CSS for now
+Add an event to the button that calls a validate function
+In the function, you should retrieve the information from each field
+To get the element, you'll use document.getElementById like we talked about
+Once you have all the data the user entered, you need to execute some if statements that check the conditions
+Finally, if there are any errors, you should create an element and add it to the page - these should be in red -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +27,37 @@ Except for the background colors, the CSS should be in a separate file -->
 
 <body>
 
-    <div id="container"></div>
+    <div id="container">
+        <form action="#">
+
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="nameInput">
+            </fieldset>
+            <div id="centerArea">
+                <fieldset>
+                    <label for="salary">Desired Salary</label>
+                    <input type="text" name="salary" id="salaryInput">
+                </fieldset>
+
+                <fieldset>
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday" id="birthdayInput">
+                </fieldset>
+            </div>
+            <fieldset>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phoneInput">
+            </fieldset>
+
+            <div id="bottomArea">
+                <div id="msg" ></div>
+                <button type="button" id="submitBtn">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 
