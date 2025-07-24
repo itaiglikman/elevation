@@ -1,62 +1,45 @@
-(() => {
-    
-    console.log(document.getElementById('myDiv'));
+const postsArr = [];
+const container = document.getElementById('container');
+const postBtn = document.getElementById('postBtn');
+const deleteBtn = document.getElementById('deleteBtn');
+const postsArea = document.createElement('div');
 
-    // css like selector - get the first element with this class in body
-    console.log(document.querySelector('body > .pick-me'));
+function render() {
+    postsArea.innerHTML = '';
+    container.appendChild(postsArea);
+    for (let i = 0; i < postsArr.length; i++) {
+        const newPost = document.createElement('div');
+        newPost.setAttribute('id', `post${i}`);
+        newPost.classList.add('post');
+        const postName = document.createElement('strong');
+        postName.innerHTML = postsArr[i].name + ':';
+        const postText = document.createElement('span');
+        postText.innerHTML = postsArr[i].text;
+        newPost.appendChild(postName);
+        newPost.appendChild(postText);
+        postsArea.appendChild(newPost);
 
-    // returns arr to all elements with this class in body
-    console.log(document.querySelectorAll('body > .pick-me'));
-
-
-    const myP = document.querySelector('#myP');
-    const myA = document.querySelector('#myA');
-    const myDiv = document.getElementById('myDiv');
-
-
-    // update  element tags and text
-    setTimeout(() => {
-        myP.innerHTML = '<span>hello js</span>';
-        // myP.innerText = '<span>hello js</span>';
-    }, 2000);
-
-    // update element attributes
-    setTimeout(() => {
-        // myA.href='https:/www.google.com';
-        myA.setAttribute('href', 'https:/www.walla.com')
-        myA.innerText = 'go to walla';
-    }, 2000);
-
-    // update element style
-    setTimeout(() => {
-        myP.style.color = 'green';
-        // myP.style["font-size"] = '20px';
-        myP.style.fontSize = '20px';
-        // myP.style.cssText = 'font-size:20px; color: green';
-    }, 2000);
-
-    // update element style using classes
-    // setTimeout(() => {
-    //     myDiv.classList.add('hide');
-    // }, 2000);
-    // setTimeout(() => {
-    //     myDiv.classList.remove('hide');
-    // }, 4000);
-
-    function showAlert() {
-        alert('this fn was invoked')
+        newPost.onclick = () => {
+            deletePost(i);
+        }
     }
-
-    function changePContent() {
-        const myP2 = document.getElementById('myP2');
-        myP2.innerHTML = 'not the same content';
-    }
+}
 
 
-    // attaching an event handler to an element
+postBtn.onclick = () => {
+    const postName = document.getElementById('nameInput');
+    const postText = document.getElementById('textInput');
+    postsArr.push({ name: postName.value, text: postText.value });
+    postName.value = '';
+    postText.value = '';
+    render();
+}
 
-    document.getElementById('btnHandler').addEventListener('click', () => {
-        document.getElementById('pHandler').innerHTML = "changed with event";
-    });
+function deletePost(index) {
+    console.log(index);
+    postsArr.splice(index, 1);
+    render();
 
-})();
+}
+
+
