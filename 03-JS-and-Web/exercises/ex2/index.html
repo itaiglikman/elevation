@@ -1,0 +1,35 @@
+<!-- https://elevationacademy.github.io/fullstack-selfpaced/?authuser=0#/js-and-web/dom-intro/Exercises -->
+<!-- The above code is a reservation system where people can claim their reservations when they arrive.
+
+Use an input element to get the name, and put all your logic in a checkReservation function.
+
+The function should be invoked when you click a button:
+
+If the reservation exists and is unclaimed, welcome the user.
+If the reservation exists and is already claimed, inform the user about the situation
+If there is no reservation, tell the user there is nothing under their name
+Use 'Bob' and 'Ted' to test your code:
+
+When you test Bob, it should say "Welcome, Bob"
+When you test Ted, it should say "Hmm, someone already claimed this reservation"
+If you try a different name, it should say "You have no reservation" -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="name" id="guestName"><br>
+    <button id="checkBtn">Check your reservation</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
