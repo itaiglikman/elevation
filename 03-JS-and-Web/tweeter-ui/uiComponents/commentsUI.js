@@ -3,9 +3,7 @@ function commentsUI(post) {
     const comments = $('<div>')
         .addClass('comments')
     for (const comment of post.comments) {
-
         const commentContainer = $('<div>')
-            .attr('data-id', comment.id)
             .addClass('comment');
         const commentText = $('<div>')
             .attr('data-id', comment.id)

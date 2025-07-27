@@ -9,7 +9,7 @@ function postHeaderUI(post) {
         .text(post.text);
     const deletePost = $('<div>')
         .attr('data-id', post.id)
-        .addClass('delete')
+        .addClass('delete-post')
         .text('Delete post');
 
     postHeader.append(postText, deletePost);
