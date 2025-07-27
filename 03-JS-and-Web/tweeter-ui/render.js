@@ -1,5 +1,5 @@
 import commentsUI from "./uiComponents/commentsUI.js";
-import commentFooterUI from "./uiComponents/commentFooterUI.js";
+
 import postHeaderUI from "./uiComponents/postHeaderUI.js";
 
 function renderUI(posts) {
@@ -13,8 +13,7 @@ function renderUI(posts) {
 
         const postHeader = postHeaderUI(post);
         const comments = commentsUI(post);
-        const commentFooter = commentFooterUI(post);
-        postContainer.append(postHeader, comments, commentFooter);
+        postContainer.append(postHeader, comments);
 
         $('#postsContainer').append(postContainer);
     }

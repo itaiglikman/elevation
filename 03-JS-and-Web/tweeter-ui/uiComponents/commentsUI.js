@@ -1,3 +1,5 @@
+import commentFooterUI from "./commentFooterUI.js";
+
 function commentsUI(post) {
 
     const comments = $('<div>')
@@ -17,6 +19,10 @@ function commentsUI(post) {
         commentContainer.append(commentText, deleteComment);
         comments.append(commentContainer);
     }
+
+    const commentFooter = commentFooterUI(post);
+    comments.append(commentFooter);
+
     return comments;
 
 }

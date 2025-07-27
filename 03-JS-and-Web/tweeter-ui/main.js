@@ -12,7 +12,6 @@ $(postsContainer).on('click', '.delete-post', (event) => {
     try {
         const deletePostBtn = event.target;
         const postDataId = $(deletePostBtn).attr('data-id');
-        console.log(postDataId);
         console.log(tweeter.removePost(postDataId));
         console.dir(posts, { depth: null });
         rerender();

@@ -44,8 +44,7 @@ class Tweeter {
             this.#postIdCounter++;
             return post;
         } catch (error) {
-            console.error(error.message);
-            throw new Error(error);
+            throw error;
         }
     }
 
@@ -55,8 +54,7 @@ class Tweeter {
             this.#posts.splice(postIndex, 1);
             console.log(`post ${postIndex} removed`);
         } catch (error) {
-            console.error(error.message);
-            throw new Error(error);
+            throw error;
         }
     }
 
@@ -68,8 +66,7 @@ class Tweeter {
             this.#commentIdCounter++;
             return comment;
         } catch (error) {
-            console.error(error.message);
-            throw new Error(error);
+            throw error;
         }
     }
 
@@ -82,8 +79,7 @@ class Tweeter {
             comments.splice(commentIndex, 1);
             console.log(`comment ${commentId} removed`);
         } catch (error) {
-            console.error(error.message);
-            throw new Error(error);
+            throw error;
         }
     }
 }
