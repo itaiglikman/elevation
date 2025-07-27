@@ -8,7 +8,10 @@ function renderUI(posts) {
             .attr('data-id', post.id)
             .addClass('post');
 
-        const postText = $('<div>')
+        const postHeader = $('<div>')
+            .addClass('postHeader');
+
+        const postText = $('<h4>')
             .attr('data-id', post.id)
             .addClass('post-text')
             .text(post.text);
@@ -17,30 +20,43 @@ function renderUI(posts) {
             .addClass('delete')
             .text('Delete post');
 
+        postHeader.append(postText, deletePost);
 
         const comments = $('<div>')
             .addClass('comments')
         for (const comment of post.comments) {
+
+            const commentContainer = $('<div>')
+                .attr('data-id', comment.id)
+                .addClass('comment');
             const commentText = $('<div>')
                 .attr('data-id', comment.id)
-                .addClass('comment')
+                .addClass('comment-text')
                 .text(comment.text);
             const deleteComment = $('<div>')
                 .attr('data-id', comment.id)
                 .addClass('delete-comment')
                 .text('X');
 
-            comments.append(commentText, deleteComment);
+            commentContainer.append(commentText, deleteComment);
+            comments.append(commentContainer);
         }
+
 
         const newCommentInput = $('<input>').attr({
             'placeholder': 'Got something to say?',
             'type': 'text',
-            // 'class': 'new-comment-input'
+            'class': 'new-comment-input'
         });
-        const sendCommentBtn = $('<button>').addClass('comment-button');
+        const sendCommentBtn = $('<button>')
+            .addClass('comment-button')
+            .text('comment');
 
-        postContainer.append(postText, deletePost, comments, newCommentInput, sendCommentBtn);
+        const commentFooter = $('<div>')
+            .addClass('comment-footer')
+            .append(newCommentInput, sendCommentBtn);
+
+        postContainer.append(postHeader, comments, commentFooter);
 
         $('#tweeter').append(postContainer);
     }
