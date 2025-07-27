@@ -9,7 +9,7 @@ html {
   height: 100%;
 }
 
-#tweeter {
+#tweeter #postsContainer {
   margin: 5% auto;
   height: 100%;
   max-width: 80%;

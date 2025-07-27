@@ -1,8 +1,10 @@
 import commentsUI from "./uiComponents/commentsUI.js";
-import commentFooterUI from "./uiComponents/postFooterUI.js";
+import commentFooterUI from "./uiComponents/commentFooterUI.js";
 import postHeaderUI from "./uiComponents/postHeaderUI.js";
 
 function renderUI(posts) {
+    $('#postsContainer').empty();
+
 
     for (const post of posts) {
         const postContainer = $('<div>')
@@ -11,10 +13,10 @@ function renderUI(posts) {
 
         const postHeader = postHeaderUI(post);
         const comments = commentsUI(post);
-        const commentFooter = commentFooterUI();
+        const commentFooter = commentFooterUI(post);
         postContainer.append(postHeader, comments, commentFooter);
 
-        $('#tweeter').append(postContainer);
+        $('#postsContainer').append(postContainer);
     }
 }
 
