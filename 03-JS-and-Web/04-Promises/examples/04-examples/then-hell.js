@@ -85,6 +85,7 @@ const getSentimentDescription = function (sentiment) {
 //     })
 // })
 
+// chaining then
 getRandomWord()
     .then((word) => {
         return getSynonyms(word)
@@ -93,9 +94,15 @@ getRandomWord()
         console.log(synonyms)
         return getSentiment(synonyms[0]);
     })
-    .then((sentiment)=>{
+    .then((sentiment) => {
         console.log(sentiment);
         const description = getSentimentDescription(sentiment);
         console.log(description);
         return description;
     })
+
+/**
+[ 'Sharp', 'Poignant', 'Clever' ]
+1
+Positive
+ */
