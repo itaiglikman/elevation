@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.add-area {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.text-input {
+  flex: 1;
+}
+
+.btn {
+  padding: 0 20px ;
+}
+
+.display-input{
+    width: 100%;
+    text-align: left;
+}
+
+.display-wisdom{
+    width: 50%;
+    text-align: left;
+}
+
+
+.li-container {
+  display: flex;
+  justify-content: space-between;
+}
