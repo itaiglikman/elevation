@@ -1,0 +1,24 @@
+.Movie {
+	display: flex;
+    margin: 5% 10%;
+    border: 1px solid #ccc;
+}
+
+.Movie .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+.Movie .genres {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Movie .genres > div {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

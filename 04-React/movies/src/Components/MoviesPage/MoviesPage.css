@@ -1,0 +1,4 @@
+.MoviesPage {
+    display: flex;
+    flex-direction: column;
+}
