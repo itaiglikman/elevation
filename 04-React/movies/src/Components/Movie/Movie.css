@@ -1,4 +1,4 @@
-.Movie {
+/* .Movie {
 	display: flex;
     margin: 5% 10%;
     border: 1px solid #ccc;
@@ -21,4 +21,69 @@
     background-color: #eee;
     border-radius: 5px;
     padding: 5px 10px;
+} */
+
+.Movie {
+  display: flex;
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Movie:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-poster img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info div:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info a {
+  text-decoration: none;
+  color: #e50914;
+  font-weight: bold;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.genres div {
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.genres div:hover {
+  background: #e50914;
+}
+
+.selected {
+  border: 2px solid red;
 }

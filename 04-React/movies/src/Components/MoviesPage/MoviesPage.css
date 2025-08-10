@@ -1,4 +1,63 @@
-.MoviesPage {
+/* .MoviesPage {
     display: flex;
     flex-direction: column;
+}
+
+.MoviesPage .filter-movies{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.MoviesPage .filter-movies input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} */
+
+.MoviesPage {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.MoviesPage h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.filter-movies {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-movies input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.filter-movies button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.filter-movies button:hover {
+  background: #b20710;
+}
+
+/* Movie grid layout */
+.MoviesPage > .Movie {
+  margin-bottom: 25px;
 }
