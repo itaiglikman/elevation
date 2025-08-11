@@ -1,6 +1,6 @@
 import { useState } from "react";
 import jsonMovies from "../../data/movies.json";
-import { Movie } from "../Movie/Movie";
+import { Movie } from "../../Components/Movie/Movie";
 import "./MoviesPage.css";
 
 export function MoviesPage() {
