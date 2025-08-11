@@ -1,0 +1,6 @@
+Exercise 1
+Create a component that displays the current time, updating every second with the help of useEffect.
+
+Remember to use cleanups, if needed.
+
+https://codesandbox.io/p/sandbox/pmdq37

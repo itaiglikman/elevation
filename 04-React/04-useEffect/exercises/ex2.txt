@@ -1,0 +1,5 @@
+
+Exercise 2
+Create a React component that fetches posts data from an API and displays it on the page. You can use this mock data. Display only 10 posts, one next to the other.
+
+https://codesandbox.io/p/sandbox/vnvl6q
