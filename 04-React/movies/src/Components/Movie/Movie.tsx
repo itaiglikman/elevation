@@ -45,8 +45,8 @@ export function Movie({ movie, isSelected, onSelect }: MovieProps) {
                 </div>
                 <div>{plot}</div>
                 <div className="genres">
-                    {genres.map((g) => (
-                        <div onClick={() => handleClick(g)}>{g}</div>
+                    {genres.map((g,i) => (
+                        <div key={i} onClick={() => handleClick(g)}>{g}</div>
                     ))}
                 </div>
                 <a href={imdb} target="_blank">

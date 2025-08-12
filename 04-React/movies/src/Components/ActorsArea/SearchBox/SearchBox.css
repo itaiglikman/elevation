@@ -1,3 +1,13 @@
 .SearchBox {
-	
+}
+
+.SearchBox .result-item {
+  color: "black";
+  background: "white";
+  padding: 0.5rem;
+}
+
+.SearchBox .result-item:hover {
+  background: #f0f0f0;
+  cursor: pointer;
 }
