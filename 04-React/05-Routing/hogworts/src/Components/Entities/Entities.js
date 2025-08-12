@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const Entities = ({ getCategoryData }) => {
   const { category  } = useParams();
+//   console.log(getCategoryData(category));
   return (
     <div className="entity-list">
       {getCategoryData(category).map((entity, i) => (
