@@ -1,7 +1,7 @@
 import React from 'react';
 import Entity from './Entity';
 import './Entities.css';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 
 const Entities = ({ getCategoryData }) => {
   const { category  } = useParams();
