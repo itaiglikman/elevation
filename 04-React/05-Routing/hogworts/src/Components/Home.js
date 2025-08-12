@@ -1,4 +1,3 @@
-import React from 'react';
 import CategoryList from './Categories/CategoryList';
 import HogwartsLogo from './Header/HogwartsLogo';
 import './Home.css';
