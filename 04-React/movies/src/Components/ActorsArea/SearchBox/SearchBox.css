@@ -1,4 +1,5 @@
-.SearchBox {
+.SearchBox .results{
+    z-index: 1;
 }
 
 .SearchBox .result-item {

@@ -3,6 +3,7 @@ import "./ActorsPage.css";
 import { SearchBox } from "../../Components/ActorsArea/SearchBox/SearchBox";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { ActorCard } from "../../Components/ActorsArea/ActorCard/ActorCard";
 
 // tmdb api key 1f267fdba923cdc43b1b419b2ec2b38e
 const apiKey = '1f267fdba923cdc43b1b419b2ec2b38e';
@@ -26,6 +27,7 @@ export function ActorsPage() {
         getActors()
     }, [searchText])
 
+    console.log(actors);
 
     function addActor(index: number) {
         setActors(actors.concat(searchResults[index]));
@@ -42,9 +44,14 @@ export function ActorsPage() {
                 results={searchResults}
                 onResultClicked={(index) => addActor(index)}
             />
-            <Box >
-                {actors.map((actor:any, i) => (
-                    <Box key={i}>{actor.name}</Box>
+            <Box 
+            // w='100%'
+            display='flex'
+            flex='wrap'
+            >
+                {actors.map((actor: any, i) => (
+                    // <Box key={i}>{actor.name}</Box>
+                    <ActorCard key={i} actor={actor} />
                 ))}
             </Box>
         </Container>
