@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import nodeModel, { NoteFromUser } from '../models/nodeModel';
+import noteValidation from '../middlewares/notesValidation';
 
 const router = express.Router();
 
@@ -22,7 +23,7 @@ router.get(notesUrl + ':id', async (req: Request, res: Response) => {
 })
 
 // add new note
-router.post(notesUrl, async (req: Request, res: Response) => {
+router.post(notesUrl, noteValidation, async (req: Request, res: Response) => {
     const { title, text } = req.body;
     const newNote = await nodeModel.createNote(title, text);
     res.status(201).json(newNote);
