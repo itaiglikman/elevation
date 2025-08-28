@@ -1,61 +1,35 @@
-import express, { NextFunction, Request, Response } from "express";
-import logger from "./02-middlewares/logger";
-import counter from "./02-middlewares/counter";
+import dotenv from 'dotenv';
+import cors from "cors";
+import express from "express";
+import expressRateLimit from "express-rate-limit";
 import catchAll from "./02-middlewares/catch-all";
-import validateId from "./02-middlewares/validateId";
-import checkResourceExists from "./02-middlewares/checkResourceExists";
+import logger from "./02-middlewares/logger";
+import postsRouter from './04-routes/postsRouter';
+import routeNotFound from './02-middlewares/routeNotFound';
 
-// ????
-// how to do checkResourceExists?
-
-
-// types.d.ts -> add custom property to request object
-declare global {
-    namespace Express {
-        interface Request {
-            requestCounter?: number;
-        }
-    }
-}
+// Load environment variables from .env file
+dotenv.config();
 
 const server = express();
+
+// security DoS Attack: limits number of request from the same IP:
+server.use(expressRateLimit({
+    windowMs: 1000, //time limit
+    max: 20 //max requests allowed in that time window
+}));
+
 server.use(express.json());
-
+server.use(cors());
 server.use(logger);
-server.use(counter);
 
-server.get('/', (request: Request, response: Response, next: NextFunction) => {
-    response.json({ 'message': 'welcome ', 'requestCounter': request.requestCounter });
-})
+server.use('/posts', postsRouter)
 
-const users = [
-    { id: 1, name: "Alice", email: "alice@example.com" },
-    { id: 2, name: "Bob", email: "bob@example.com" },
-    { id: 3, name: "Charlie", email: "charlie@example.com" }
-];
+// routeNotFound
+server.use(routeNotFound);
 
-server.get('/users', (request: Request, response: Response, next: NextFunction) => {
-    response.status(200).json(users)
-})
+// any other error
+server.use(catchAll)
 
-server.get('/users/:id', validateId, (request: Request, response: Response, next: NextFunction) => {
-    // server.get('/users/:id', validateId, checkResourceExists, (request: Request, response: Response, next: NextFunction) => {
-    try {
-        const id = +request.params.id;
-        const user = users.find(u => u.id === id);
-        response.status(200).json(user);
-    } catch (error) {
-        console.log('userId route');
-        console.log(error.message);
-    }
-})
-
-server.post('/users', (request: Request, response: Response, next: NextFunction) => {
-    const data = request.body;
-})
-
-server.use(catchAll);
-
-server.listen(3000, () => {
-    console.log('listening on port 3000');
+server.listen(process.env.PORT, () => {
+    console.log('listening on port:' + process.env.PORT);
 })

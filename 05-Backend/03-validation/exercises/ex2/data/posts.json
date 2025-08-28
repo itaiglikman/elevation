@@ -1,0 +1,71 @@
+{
+    "1": {
+        "id": 1,
+        "title": "First Post",
+        "content": "Content of the first post",
+        "tags": [
+            "typescript",
+            "backend"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "postId": "1",
+                "content": "Great post!",
+                "email": "user1@example.com"
+            },
+            {
+                "id": 2,
+                "postId": "1",
+                "content": "Thanks for sharing.",
+                "email": "user2@example.com"
+            }
+        ]
+    },
+    "2": {
+        "id": 2,
+        "title": "Second Post",
+        "content": "Content of the second post",
+        "tags": [
+            "validation",
+            "api"
+        ],
+        "comments": [
+            {
+                "id": 3,
+                "postId": "2",
+                "content": "Very helpful.",
+                "email": "user3@example.com"
+            },
+            {
+                "id": 4,
+                "postId": "2",
+                "content": "Nice explanation.",
+                "email": "user4@example.com"
+            }
+        ]
+    },
+    "3": {
+        "id": 3,
+        "title": "Third Post",
+        "content": "Content of the third post",
+        "tags": [
+            "comments",
+            "example"
+        ],
+        "comments": [
+            {
+                "id": 5,
+                "postId": "3",
+                "content": "Interesting read.",
+                "email": "user5@example.com"
+            },
+            {
+                "id": 6,
+                "postId": "3",
+                "content": "Good job!",
+                "email": "user6@example.com"
+            }
+        ]
+    }
+}
